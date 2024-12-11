@@ -4,5 +4,7 @@
   padding: 0;
   border: 0;
   font-family: "Press Start 2P", cursive;
-  user-select: none;
-}
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}/*# sourceMappingURL=reset.css.map */

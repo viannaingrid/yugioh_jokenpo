@@ -1,11 +1,13 @@
 /**
 * customized divs (containers) and framed objects (background and frame image).
 */
+
 /* game div without background image*/
 .rpgui-container {
   /* position style and default z */
   position: fixed;
   z-index: 10;
+
   overflow: show;
 }
 
@@ -19,10 +21,12 @@
   border-image-width: 18px;
   border-width: 15px;
   padding: 12px;
+
   /* internal border */
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+
   /* background */
   background: url("../assets/rpg/background-image.png") repeat repeat;
   background-clip: padding-box;
@@ -40,10 +44,12 @@
   border-image-width: 18px;
   border-width: 15px;
   padding: 12px;
+
   /* internal border */
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+
   /* background */
   background: url("../assets/rpg/background-image-golden.png") repeat repeat;
   background-clip: padding-box;
@@ -61,10 +67,12 @@
   border-image-width: 18px;
   border-width: 15px;
   padding: 12px;
+
   /* internal border */
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+
   /* background */
   background: url("../assets/rpg/background-image-golden2.png") repeat repeat;
   background-clip: padding-box;
@@ -75,6 +83,7 @@
 /* game div with soft grey background image*/
 .framed-grey {
   position: relative;
+
   /* border */
   border-style: solid;
   border-image-source: url("../assets/rpg/border-image-grey.png");
@@ -83,13 +92,15 @@
   border-image-width: 7px;
   border-width: 7px;
   padding: 12px;
+
   /* internal border */
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+
   /* background */
   background: url("../assets/rpg/background-image-grey.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center;
-}/*# sourceMappingURL=containers_and_frames.css.map */
+}
