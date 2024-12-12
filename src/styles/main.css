@@ -28,4 +28,12 @@
 }
 .container .container__left {
   width: 35%;
+  min-width: 18.75rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .score_box {
+  background-color: #fff;
+  padding: 1.875rem;
 }/*# sourceMappingURL=main.css.map */
