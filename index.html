@@ -33,9 +33,22 @@
             </section>
         </div>
         <div class="container__right">
-            <section class="card-box__container framed">
+            <section class="card-box__container">
                 <section class="card-box framed" id="computer-cards"></section>
-                <section class="card-verus"></section>
+                <section class="card-verus">
+                    <div class="versus-top">
+                        <section class="card-infield">
+                            <img id="player-field-card" height="180px" width="125px">
+                        </section>
+                        <img height="100px" src="/src/assets/icons/millenium2.png">
+                        <section class="card-infield">
+                            <img id="computer-field-card" height="180px" width="125px">
+                        </section>
+                    </div>
+                    <div class="versus-bottom">
+                        <button id="next-duel" class="rpgui-button" onclick="resetDuel()">Ganhou</button>
+                    </div>
+                </section>
                 <section class="card-box framed" id="player-cards"></section>
             </section>
         </div>
