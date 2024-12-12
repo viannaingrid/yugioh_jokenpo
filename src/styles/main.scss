@@ -26,3 +26,14 @@
         rgba(0,0,0,1) 100%);
     }
 }
+
+.container {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    height: 100vh;
+
+    .container__left {
+        width: 35%;
+    }
+}
