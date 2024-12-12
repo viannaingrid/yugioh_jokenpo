@@ -9,6 +9,13 @@ const state ={
         name: document.getElementById("card-name"),
         type: document.getElementById("card-type"),
     },
+    fieldCards: {
+        player: document.getElementById("player-field-card"),
+        computer: document.getElementById("computer-field-card"),
+    },
+    actions: {
+        button: document.getElementById("next-duel"),
+    }
 }
 
 function init () {
