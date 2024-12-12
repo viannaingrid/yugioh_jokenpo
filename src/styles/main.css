@@ -44,4 +44,7 @@
 
 .card_details {
   background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
