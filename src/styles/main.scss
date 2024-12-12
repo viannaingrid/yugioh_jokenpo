@@ -50,6 +50,23 @@
         border: 3px solid #000;
         border-radius: 10px;
     }
+
+}
+
+.container__right {
+    width: 63%;
+
+    .card-box__container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: .3rem;
+    }
+}
+
+.card-versus {
+    display: flex;
 }
 
 .card_details {
@@ -70,3 +87,4 @@
         font-size: 1rem;
     }
 }
+

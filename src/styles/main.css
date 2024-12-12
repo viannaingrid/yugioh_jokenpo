@@ -42,6 +42,21 @@
   border-radius: 10px;
 }
 
+.container__right {
+  width: 63%;
+}
+.container__right .card-box__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.3rem;
+}
+
+.card-versus {
+  display: flex;
+}
+
 .card_details {
   background-color: #fff;
   padding: 1rem;
