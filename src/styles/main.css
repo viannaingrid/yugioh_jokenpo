@@ -40,4 +40,8 @@
 .container .frame {
   border: 3px solid #000;
   border-radius: 10px;
+}
+
+.card_details {
+  background-color: #fff;
 }/*# sourceMappingURL=main.css.map */
