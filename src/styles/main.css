@@ -51,4 +51,10 @@
   justify-content: space-between;
   height: 6rem;
   width: 100%;
+}
+.card_details #card-name {
+  font-size: 0.8rem;
+}
+.card_details #card-type {
+  font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */
