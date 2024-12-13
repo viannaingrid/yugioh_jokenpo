@@ -19,18 +19,18 @@ const state ={
 };
 
 const playersSides = {
-    player1: "player-field-card",
-    player2: "computer-field-card",
+    player1: "player-cards",
+    player2: "computer-cards",
 }
 
-const pathImages = ".src/assets/icons/";
+const pathImages = "./src/assets/icons/";
 
 const cardData = [
     {
         id: 0,
         name: "Blue Eyes White Dragon",
         type: "Paper",
-        Img: `${pathImages}dragon.png`,
+        img: `${pathImages}dragon.png`,
         WinOf: [1],
         LoseOf: [2],
     },
@@ -38,7 +38,7 @@ const cardData = [
         id: 1,
         name: "Dark Magician",
         type: "Rock",
-        Img: `${pathImages}magician.png`,
+        img: `${pathImages}magician.png`,
         WinOf: [2],
         LoseOf: [0],
     },
@@ -46,11 +46,42 @@ const cardData = [
         id: 2,
         name: "Exodia",
         type: "Scissors",
-        Img: `${pathImages}exodia.png`,
+        img: `${pathImages}exodia.png`,
         WinOf: [0],
         LoseOf: [1],
     }
 ];
+
+async function getRandomCardId() {
+    const randomIndex = Math.floor(Math.random() * cardData.length);
+    return cardData[randomIndex].id;
+}
+
+async function createCardImage(IdCard, fieldSide) {
+    const cardImage = document.createElement("img");
+    cardImage.setAttribute("height", "100px");
+    cardImage.setAttribute("src", "./src/assets/icons/card-back.png");
+    cardImage.setAttribute("data-id", IdCard);
+    cardImage.classList.add("card");
+
+    if(fieldSide === playersSides.player1) {
+        cardImage.addEventListener("click", () => {
+            setCardsField(cardImage.getAttribute("data-id"));
+        });
+    }
+
+    cardImage.addEventListener("mouseover", () => {
+        drawSelectCard(IdCard);
+    });
+
+    return cardImage;
+}
+
+async function drawSelectCard(index) {
+    state.cardSprites.avatar.src = cardData[index].img;
+    state.cardSprites.name.innerText = cardData[index].name;
+    state.cardSprites.type.innerText = "atribute: " + cardData[index].type;
+}
 
 async function drawCards(cardNumbers, fieldSide) {
     for(let i = 0; i < cardNumbers; i++) {
