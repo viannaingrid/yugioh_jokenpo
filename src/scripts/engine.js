@@ -18,13 +18,15 @@ const state ={
     }
 };
 
+const pathImges = ".src/assets/icons/";
+
 const cardData = [
     {
         id: 0,
         name: "Blue Eyes White Dragon",
-        Img: ".src/assets/icons/dragon.png"
-    }
-]
+        Img: "dragon.png"
+    },
+];
 
 function init () {
 
