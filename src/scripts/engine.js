@@ -16,7 +16,15 @@ const state ={
     actions: {
         button: document.getElementById("next-duel"),
     }
-}
+};
+
+const cardData = [
+    {
+        id: 0,
+        name: "Blue Eyes White Dragon",
+        Img: ".src/assets/icons/dragon.png"
+    }
+]
 
 function init () {
 
